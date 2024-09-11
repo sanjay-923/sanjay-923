@@ -326,6 +326,9 @@ footer p {
         width: 200px;
         border: 1px solid #333333;
         z-index: 100;
+        transition: max-height 0.3s ease;
+        max-height: 0; /* Initially collapsed */
+        overflow: hidden;
     }
 
     .nav-links li {
@@ -340,6 +343,7 @@ footer p {
 
     .nav-links.active {
         display: flex; /* Show the nav when the menu is active */
+        max-height: 300px; /* Enough space to reveal the links */
     }
 }
 
