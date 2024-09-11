@@ -180,9 +180,11 @@ section h2 {
     display: flex;
     list-style: disc inside;
     max-width: 800px;
-    margin: auto;
     font-size: 16px;
     justify-content: center;
+    text-align: left; /* Align text to the left */
+    margin: 0 auto;   /* Center the block */
+    width: fit-content; /* Adjust width based on content */
 }
 
 
