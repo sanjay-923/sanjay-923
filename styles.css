@@ -177,6 +177,7 @@ section h2 {
 
 /* Centering the entire certifications section */
 .certifications-list {
+    display: flex;
     list-style: disc inside;
     max-width: 800px;
     margin: auto;
@@ -184,13 +185,6 @@ section h2 {
     justify-content: center;
 }
 
-/* Making sure the content is centered and aligned properly */
-.certification-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 800px; /* Adjust width as per your design */
-}
 
 
 /* Contact Section */
