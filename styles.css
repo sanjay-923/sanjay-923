@@ -175,13 +175,31 @@ section h2 {
     margin-bottom: 10px;
 }
 
-/* Certifications Section */
-.certifications-list {
-    list-style: disc inside;
-    max-width: 800px;
-    margin: auto;
-    font-size: 16px;
+/* Centering the entire certifications section */
+#certifications {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Making sure the content is centered and aligned properly */
+.certification-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px; /* Adjust width as per your design */
+}
+
+.certification-item {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
 }
 
 /* Contact Section */
