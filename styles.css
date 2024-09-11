@@ -57,7 +57,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-    background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+    background: url('https://www.zuken.com/en/wp-content/uploads/sites/2/2023/11/wp-header-1920x844-high-speed-pcb-design.png') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -67,13 +67,13 @@ nav ul li a:hover {
 }
 
 #hero .container {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 40px;
     border-radius: 10px;
 }
 
 #hero h2 {
-    color: #008080;
+    color: #00b3b3;
     font-size: 36px;
     margin-bottom: 20px;
 }
@@ -84,7 +84,7 @@ nav ul li a:hover {
 }
 
 .btn {
-    background-color: #008080;
+    background-color: #00b3b3;
     color: #FFFFFF;
     padding: 10px 20px;
     text-decoration: none;
@@ -93,7 +93,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #005757;
+    background-color: #007575;
 }
 
 /* Sections */
