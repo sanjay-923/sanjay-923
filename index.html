@@ -1,174 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjay S | PCB & FPGA Design Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .profile-img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+    }
+    h2 {
+      text-align: center;
+    }
+    .certificates img, .internship img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .btn {
+      display: inline-block;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      margin: 20px 0;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    p {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="container">
-            <h1>Sanjay S</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container">
-            <h2>PCB Design Engineer | Hardware Design Engineer | FPGA Design Engineer</h2>
-            <p>Passionate about innovative solutions and efficient design with hands-on experience in cutting-edge technologies.</p>
-            <a href="#projects" class="btn">View Portfolio</a>
-        </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I’m Sanjay S, a recent graduate in Electronics and Communication Engineering from Rajalakshmi Institute of Technology, Chennai. I specialize in PCB Design, Hardware Development, and FPGA-based systems. My technical proficiency includes hands-on experience with industry-standard tools such as Proteus, Quartus Prime, and Altium Designer.
-                    </p>
-                    <p>
-                        During my internship at Variable Energy Cyclotron Center (VECC), Kolkata, I worked on PCB design using Proteus and developed an FPGA-based humidity and temperature sensor for gas detection. My final year project involved developing an IoT-based inverter monitoring and control system, achieving a 20% increase in efficiency.
-                    </p>
-                    <p>
-                        I have also participated in various workshops and conferences, enhancing my skills in FPGA design, Verilog, VHDL, and PCB manufacturing.
-                    </p>
-                </div>
-                <!-- Optional: Add a professional photo here -->
-                <!-- <div class="about-photo">
-                    <img src="your-photo.jpg" alt="Sanjay S">
-                </div> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <h3>FPGA-Based Humidity and Temperature Sensor for Gas Detector</h3>
-                    <p>
-                        Developed a real-time monitoring system for atmospheric temperature and humidity using FPGA. Designed and implemented the system using Quartus Prime and Proteus for PCB layout.
-                    </p>
-                    <p><strong>Tools Used:</strong> Proteus, Quartus Prime, Python</p>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <h3>IoT-Based Inverter Monitoring and Control</h3>
-                    <p>
-                        Developed an advanced inverter system with IoT integration, increasing efficiency by 20% and reducing overall system size. Designed PCB layout and created a 3D model using Proteus.
-                    </p>
-                    <p><strong>Tools Used:</strong> Proteus, Python, IoT Technologies</p>
-                </div>
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <h3>PCB Design for Various Circuits</h3>
-                    <p>
-                        Designed multiple PCB layouts for different electronic circuits, ranging from small-scale to complex systems. Currently expanding skills with Altium Designer.
-                    </p>
-                    <p><strong>Tools Used:</strong> Proteus, Altium Designer</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill">
-                    <h3>PCB Design</h3>
-                    <p>Proteus, Altium Designer</p>
-                </div>
-                <div class="skill">
-                    <h3>FPGA Design</h3>
-                    <p>Quartus Prime, Verilog, VHDL</p>
-                </div>
-                <div class="skill">
-                    <h3>Programming Languages</h3>
-                    <p>Python, Verilog, VHDL</p>
-                </div>
-                <div class="skill">
-                    <h3>IoT Technologies</h3>
-                    <p>IoT Integration, Real-Time Monitoring</p>
-                </div>
-                <div class="skill">
-                    <h3>PCB Tools</h3>
-                    <p>Proteus, Altium Designer, Keil U5</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications and Workshops Section -->
-    <section id="certifications">
-        <div class="container">
-            <h2>Certifications & Workshops</h2>
-            <ul class="certifications-list">
-                <li>Quartus Prime Lite Software Training – Gained practical experience in FPGA design.</li>
-                <li>Verilog and VHDL Programming Workshop – Learned basics of hardware description languages.</li>
-                <li>ICRTICPT 2022 Conference – Presented a paper on IoT.</li>
-                <li>AAVISHKAAR at Vel Tech High Tech – Delivered a project presentation.</li>
-                <li>Industrial Visit to Flex Electronics – Learned about PCB manufacturing and assembly.</li>
-            </ul>
-        </div>
-    </section>
-
-<!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <h2>Contact</h2>
-        <form action="mailto:gss.sanjay23@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-
-        <!-- Download Resume Button -->
-        <div class="download-resume">
-            <a href="resume.pdf" class="btn" download>Download Resume</a>
-        </div>
-
-        <div class="contact-links">
-            <p>Connect with me:</p>
-            <a href="https://linkedin.com/in/sanjay-s-6b48a6200" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/sanjay-923" target="_blank">GitHub</a>
-        </div>
+  <div class="container">
+    
+    <!-- Personal Profile Section -->
+    <div class="section">
+      <h2>Personal Profile</h2>
+      <img src="path_to_your_image" alt="Profile Image" class="profile-img">
+      <p><strong>Name:</strong> [Your Name]</p>
+      <p><strong>Specialization:</strong> PCB Designer | IoT Engineer | FPGA Developer</p>
     </div>
-</section>
 
+    <!-- Achievements & Certifications Section -->
+    <div class="section certificates">
+      <h2>Achievements & Certifications</h2>
+      
+      <h3>1. ICRTICPT'2022 Certificate of Participation</h3>
+      <img src="path_to_icrticpt_certificate" alt="ICRTICPT'2022 Certificate">
+      <p>Participated and presented a paper on <strong>"Smart Home Energy Management System Based on IoT"</strong> at the <strong>First International Conference on Recent Trends in Information, Communication and Pervasive Technologies</strong>.</p>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Sanjay S. All rights reserved.</p>
-        </div>
-    </footer>
+      <h3>2. TECHUTSAY'22 Certificate of Merit</h3>
+      <img src="path_to_techutsay_certificate" alt="TECHUTSAY'22 Certificate">
+      <p>Secured 1st/2nd/3rd place in the <strong>Non-Technical Event: Loop Archetype</strong> at TECHUTSAY'22, organized by Rajalakshmi Institute of Technology.</p>
+    </div>
 
-    <!-- Optional JavaScript -->
-    <script src="scripts.js"></script>
+    <!-- Internship Section -->
+    <div class="section internship">
+      <h2>Internship Experience</h2>
+      
+      <h3>Internship at Variable Energy Cyclotron Center (VECC)</h3>
+      <img src="path_to_internship_certificate" alt="Internship Certificate">
+      <p><strong>Project Title:</strong> Design of FPGA based on Humidity and Temperature sensor for Gas detector</p>
+      <p><strong>Duration:</strong> July 2023 - August 2023</p>
+      <p><strong>Description:</strong> Implemented a real-time monitoring system for atmospheric temperature and humidity levels, improving gas detector accuracy.</p>
+    </div>
+
+    <!-- Resume Download Section -->
+    <div class="section">
+      <h2>Download Resume</h2>
+      <p><a href="resume.pdf" class="btn" download>Download Resume</a></p>
+    </div>
+    
+  </div>
 </body>
 </html>
