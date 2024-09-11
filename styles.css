@@ -176,12 +176,30 @@ section h2 {
 }
 
 /* Centering the entire certifications section */
-.certifications-list {
-    list-style: disc inside;
-    max-width: 800px;
-    margin: auto;
-    font-size: 16px;
+/* Ensure the section or parent container is using flexbox or another centering method */
+section {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
 }
+
+/* Style for the certification content block */
+.certification-content {
+    text-align: left; /* Align text to the left */
+    width: 80%; /* Adjust width as needed to fit your design */
+    max-width: 800px; /* Optional: maximum width for better readability */
+}
+
+/* Style for each certification item */
+.certification-item {
+    margin-bottom: 20px; /* Space between items */
+}
+
+/* Optional: Style for lists */
+.certification-item ul {
+    list-style-type: disc; /* Bullet points for lists */
+    padding-left: 20px; /* Indentation for list items */
+}
+
 
 
 
