@@ -177,7 +177,6 @@ section h2 {
 
 /* Centering the entire certifications section */
 .certifications-list {
-    display: flex;
     list-style: disc inside;
     max-width: 800px;
     margin: auto;
