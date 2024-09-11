@@ -140,8 +140,9 @@ section h2 {
 }
 
 .project-card:hover {
-    background-color: #333333;
-    transform: translateY(-5px); /* Slight lift effect on hover */
+    transform: translateY(-10px); /* Lift the card slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    background-color: #222;
 }
 
 .project-card h3 {
