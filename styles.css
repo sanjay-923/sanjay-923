@@ -179,7 +179,6 @@ section h2 {
 #certifications {
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
     flex-direction: column;
     padding: 20px;
@@ -190,7 +189,6 @@ section h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     max-width: 800px; /* Adjust width as per your design */
 }
 
