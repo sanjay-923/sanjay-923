@@ -89,11 +89,12 @@ nav ul li a:hover {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .btn:hover {
     background-color: #007575;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 /* Sections */
@@ -135,11 +136,12 @@ section h2 {
     padding: 20px;
     border-radius: 10px;
     width: 300px;
-    transition: background-color 0.3s;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .project-card:hover {
     background-color: #333333;
+    transform: translateY(-5px); /* Slight lift effect on hover */
 }
 
 .project-card h3 {
@@ -234,6 +236,12 @@ footer {
     text-align: center;
     color: #CCCCCC;
     border-top: 1px solid #333333;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
 }
 
 /* Responsive Design */
@@ -258,5 +266,24 @@ footer {
 
     #hero .container {
         padding: 20px;
+    }
+
+    /* New styles for responsiveness */
+    #hero h2 {
+        font-size: 28px; /* Adjust hero font size on smaller screens */
+    }
+
+    #hero p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+
+    .about-content, .project-grid, .skills-grid {
+        flex-direction: column; /* Stack the items on smaller screens */
+        align-items: center;
+    }
+
+    .project-card, .skill {
+        width: 100%; /* Make project and skill cards full width on mobile */
+        margin-bottom: 20px;
     }
 }
