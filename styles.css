@@ -63,7 +63,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 60px; /* To prevent overlap with nav */
+    padding-top: 60px;
 }
 
 #hero .container {
@@ -94,7 +94,7 @@ nav ul li a:hover {
 
 .btn:hover {
     background-color: #007575;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Sections */
@@ -140,8 +140,8 @@ section h2 {
 }
 
 .project-card:hover {
-    transform: translateY(-10px); /* Lift the card slightly */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     background-color: #222;
 }
 
@@ -175,34 +175,6 @@ section h2 {
     margin-bottom: 10px;
 }
 
-/* Centering the entire certifications section */
-/* Ensure the section or parent container is using flexbox or another centering method */
-section {
-    display: flex;
-    justify-content: center; /* Centers the content horizontally */
-}
-
-/* Style for the certification content block */
-.certification-content {
-    text-align: left; /* Align text to the left */
-    width: 80%; /* Adjust width as needed to fit your design */
-    max-width: 800px; /* Optional: maximum width for better readability */
-}
-
-/* Style for each certification item */
-.certification-item {
-    margin-bottom: 20px; /* Space between items */
-}
-
-/* Optional: Style for lists */
-.certification-item ul {
-    list-style-type: disc; /* Bullet points for lists */
-    padding-left: 20px; /* Indentation for list items */
-}
-
-
-
-
 /* Contact Section */
 form {
     display: flex;
@@ -232,6 +204,7 @@ input::placeholder, textarea::placeholder {
 
 button.btn {
     align-self: flex-start;
+    margin-top: 10px;
 }
 
 .contact-links {
@@ -289,26 +262,25 @@ footer p {
         padding: 20px;
     }
 
-    /* New styles for responsiveness */
     #hero h2 {
-        font-size: 28px; /* Adjust hero font size on smaller screens */
+        font-size: 28px;
     }
 
     #hero p {
-        font-size: 16px; /* Adjust paragraph size */
+        font-size: 16px;
     }
 
     .about-content, .project-grid, .skills-grid {
-        flex-direction: column; /* Stack the items on smaller screens */
+        flex-direction: column;
         align-items: center;
     }
 
     .project-card, .skill {
-        width: 100%; /* Make project and skill cards full width on mobile */
+        width: 100%;
         margin-bottom: 20px;
     }
 }
-/* Style for the 3 dots */
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -331,7 +303,7 @@ footer p {
 
 @media (max-width: 768px) {
     .menu-toggle {
-        display: flex; /* Show 3 dots */
+        display: flex;
         position: relative;
         z-index: 101;
     }
@@ -341,13 +313,13 @@ footer p {
         flex-direction: column;
         position: absolute;
         right: 0;
-        top: 60px; /* Adjust based on nav height */
+        top: 60px;
         background-color: #000000;
         width: 200px;
         border: 1px solid #333333;
         z-index: 100;
         transition: max-height 0.3s ease;
-        max-height: 0; /* Initially collapsed */
+        max-height: 0;
         overflow: hidden;
     }
 
@@ -358,12 +330,73 @@ footer p {
 
     .nav-links li a {
         color: #FFFFFF;
-        text-decoration: none;
     }
 
     .nav-links.active {
-        display: flex; /* Show the nav when the menu is active */
-        max-height: 300px; /* Enough space to reveal the links */
+        display: flex;
+        max-height: 500px;
     }
 }
+/* Certifications Section */
+#certifications {
+    padding: 60px 0;
+    background-color: #1a1a1a;
+}
 
+#certifications h2 {
+    color: #00b3b3;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.certification-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.certification-item {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.certification-item h3 {
+    color: #00b3b3;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.certification-item p {
+    color: #CCCCCC;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.certification-item a {
+    color: #00b3b3;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.certification-item a:hover {
+    color: #008080;
+}
+
+.certificate-img {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid #00b3b3;
+}
