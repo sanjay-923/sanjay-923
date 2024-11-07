@@ -25,4 +25,42 @@ menuOverlay.addEventListener('click', () => {
     menuOverlay.classList.remove('active');
 });
 
+// JavaScript for Modal Popup with Background Blur
+const modal = document.getElementById("modal");
+const modalTitle = document.getElementById("modal-title");
+const modalDescription = document.getElementById("modal-description");
+const closeBtn = document.querySelector(".close");
+
+// Open modal and apply background blur
+document.querySelectorAll(".project-card, .certification-item").forEach(item => {
+    item.addEventListener("click", function() {
+        // Set modal content from data attributes
+        modalTitle.innerText = this.getAttribute("data-title");
+        modalDescription.innerText = this.getAttribute("data-description");
+
+        // Show the modal and apply blur effect
+        modal.style.display = "flex";
+        document.body.classList.add("modal-active"); // Adds blur to background
+    });
+});
+
+// Close modal and remove background blur when 'x' is clicked
+closeBtn.addEventListener("click", () => {
+    closeModal();
+});
+
+// Close modal when clicking outside the modal content
+window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+        closeModal();
+    }
+});
+
+// Function to close modal and remove background blur
+function closeModal() {
+    modal.style.display = "none";
+    document.body.classList.remove("modal-active");
+}
+
+
 </script>
